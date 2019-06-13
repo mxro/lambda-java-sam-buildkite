@@ -1,2 +1,4 @@
-# lambda-java-sam-buildkite
-Sample project for deploying a Java AWS Lambda function using SAM and Buildkite.
+# Deploy Java Lambda using SAM and Buildkite
+
+Based on: https://github.com/aws-samples/aws-sam-java-rest
+

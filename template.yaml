@@ -1,0 +1,20 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Transform: AWS::Serverless-2016-10-31
+Description: >
+    sam-app
+
+Globals:
+    Function:
+        Timeout: 20
+        Environment: 
+
+Resources:
+  SimpleFunction:
+    Type: AWS::Serverless::Function 
+    Properties:
+      CodeUri: target/lambda-java-sam-buildkite-1.0.0.jar
+      Handler: com.amazonaws.handler.SimpleHandler::myHandler
+      Runtime: java8
+
+
+
